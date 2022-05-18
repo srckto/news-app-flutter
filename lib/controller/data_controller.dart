@@ -22,8 +22,8 @@ class DataController extends GetxController {
 
     await DioHelper.getData(url: "v2/everything", query: {
       "q": "apple",
-      "from": "2021-10-10",
-      "to": "2021-10-10",
+      "from": "2022-05-17",
+      "to": "2022-05-17",
       "sortBy": "popularity",
       "apiKey": "442cd1c762ba49cda0db56907b079af9",
     }).then((value) {
@@ -38,7 +38,7 @@ class DataController extends GetxController {
 
     await DioHelper.getData(url: "v2/everything", query: {
       "q": "tesla",
-      "from": "2021-09-11",
+      "from": "2022-04-18",
       "sortBy": "publishedAt",
       "apiKey": "442cd1c762ba49cda0db56907b079af9",
     }).then((value) {

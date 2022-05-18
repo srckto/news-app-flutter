@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:get/get.dart';
+import 'package:get/get.dart' hide Response;
 
 class DioHelper extends GetxController {
   static Dio? dio;
@@ -13,7 +13,7 @@ class DioHelper extends GetxController {
     );
   }
 
-  static Future getData({required String url,required Map<String, dynamic> query}) async {
+  static Future<Response> getData({required String url,required Map<String, dynamic> query}) async {
     return await dio!.get(
       url,
       queryParameters: query,
